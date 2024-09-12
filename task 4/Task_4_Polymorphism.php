@@ -23,13 +23,13 @@ class Bird extends Animal {
 }
 
 $dog = new Dog();
-echo get_class($dog) . " says ". $dog->makeSound(); // Output: Woof
+echo get_class($dog) . " says ". $dog->makeSound(); // Output: Dog says Woof 
 
 $cat = new Cat();
-echo get_class($cat) . " says ". $cat->makeSound(); // Output: Meow
+echo get_class($cat) . " says ". $cat->makeSound(); // Output: Cat says Meow
 
 $bird = new Bird();
-echo get_class($bird) . " says ". $bird->makeSound(); // Output: Tweet
+echo get_class($bird) . " says ". $bird->makeSound(); // Output: Bird says Tweet
 
 
 
