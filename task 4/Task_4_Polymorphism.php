@@ -1,22 +1,22 @@
 <?php 
 
-abstract class Animal {
-  abstract public function makeSound();
+interface  Animal {
+   public function makeSound();
 }
 
-class Dog extends Animal {
+class Dog implements Animal {
   public function makeSound() {
     return "Woof";
   }
 }
 
-class Cat extends Animal {
+class Cat implements Animal {
   public function makeSound() {
     return "Meow";
   }
 }
 
-class Bird extends Animal {
+class Bird implements Animal {
   public function makeSound() {
     return "Tweet";
   }
